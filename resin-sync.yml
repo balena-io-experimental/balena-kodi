@@ -1,0 +1,8 @@
+source: app/
+before: ''
+ignore:
+    - .git
+    - Dockerfile.template
+    - resin-sync.yml
+progress: true
+watch: false
