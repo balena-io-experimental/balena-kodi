@@ -1,27 +1,44 @@
 # resin-kodi
-A boilerplate for getting up and running with Kodi on your resin-enabled rpi!
+A boilerplate for getting up and running with [Kodi](https://kodi.tv/)
+open source home theatre on on your resin-enabled [Raspberry Pi](https://www.raspberrypi.org/)!
 
-## Required configuration environment variables
-Name | Value
------------- | -------------
-**RESIN_HOST_CONFIG_gpu_mem** | `160`
+## Evnvironment variables
 
-## Suggested configuration environment variables
-Name | Value
------------- | -------------
-**RESIN_SUPERVISOR_DELTA** | `1`
-**RESIN_HOST_CONFIG_disable_splash** | `1`
-**RESIN_HOST_CONFIG_disable_overscan** | `1`
+Set these environment variables in the application's dashboard on resin.
 
-## pHAT DAC Required configuration environment variable
-Name | Value
------------- | -------------
-**RESIN_HOST_CONFIG_dtoverlay** | `hifiberry-dac`
+### Required configuration environment variables
 
-## pHAT DAC Required environment variable
-Name | Value
------------- | -------------
-**PHAT_DAC** | `1`
+Set this in the Fleet or Device Configuration panel.
+
+| Name                          | Value  |
+|------------------------------ | ------ |
+| **RESIN_HOST_CONFIG_gpu_mem** | `160`  |
+
+### Suggested configuration environment variables
+
+Set these in the Fleet or Device Configuration panel.
+
+| Name                                   | Value  |
+|--------------------------------------- | ------ |
+| **RESIN_SUPERVISOR_DELTA**             | `1`    |
+| **RESIN_HOST_CONFIG_disable_splash**   | `1`    |
+| **RESIN_HOST_CONFIG_disable_overscan** | `1`    |
+
+### pHAT DAC Required configuration environment variable
+
+Set this in the Fleet or Device Configuration panel.
+
+| Name                            | Value            |
+|-------------------------------- | ---------------- |
+| **RESIN_HOST_CONFIG_dtoverlay** | `hifiberry-dac`  |
+
+### pHAT DAC Required environment variable
+
+Set this in the Environmental Configuration panel.
+
+| Name         | Value |
+|------------- | ----- |
+| **PHAT_DAC** | `1`   |
 
 ## License
 
