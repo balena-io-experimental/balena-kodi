@@ -58,7 +58,7 @@ COPY "$SOURCEFOLDER/app/package.json" ./
 # NPM i app
 RUN JOBS=MAX npm i --production
 
-# Move app to filesystem
+# Move app and advancedsetting.xml to filesystem
 COPY "$SOURCEFOLDER/app" ./
 
 # Move to /
