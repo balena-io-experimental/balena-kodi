@@ -16,6 +16,8 @@ if [[ "$REMOTE_CONTROL" = "1" ]]; then
 else
   # Remove advancedsettings.xml 
   mkdir /data/kodi/userdata >/dev/null 2>&1 || true && rm -rf /data/kodi/userdata/advancedsettings.xml
+	# also disable remote control in guisettings.xml if it is set.
+	sed -i -e 's/<esallinterfaces default="true">true/<esallinterfaces default="true">false/' -e 's/<webserver default="true">true/<webserver default="true">false/' /root/.kodi/userdata/guisettings.xml
 fi
 
 while true; do
