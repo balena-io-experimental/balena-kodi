@@ -1,12 +1,12 @@
-# resin-kodi
+# balena-kodi
 A boilerplate for getting up and running with [Kodi](https://kodi.tv/)
-open source home theatre on on your resin-enabled [Raspberry Pi](https://www.raspberrypi.org/)!
+open source home theatre on your balena-enabled [Raspberry Pi](https://www.raspberrypi.org/).
 
 ## Evnvironment variables
 
-Set these environment variables in the application's dashboard on resin.
+Set these environment variables in the application's dashboard on balena.
 
-### Required configuration environment variables
+### Required Device Configuration
 
 Set this in the Fleet or Device Configuration panel.
 
@@ -14,7 +14,7 @@ Set this in the Fleet or Device Configuration panel.
 |------------------------------ | ------ |
 | **RESIN_HOST_CONFIG_gpu_mem** | `160`  |
 
-### Suggested configuration environment variables
+### Suggested Device Configuration
 
 Set these in the Fleet or Device Configuration panel.
 
@@ -24,25 +24,9 @@ Set these in the Fleet or Device Configuration panel.
 | **RESIN_HOST_CONFIG_disable_splash**   | `1`    |
 | **RESIN_HOST_CONFIG_disable_overscan** | `1`    |
 
-### pHAT DAC Required configuration environment variable
+### Device Service Variable to enable Remote Control
 
-Set this in the Fleet or Device Configuration panel.
-
-| Name                            | Value            |
-|-------------------------------- | ---------------- |
-| **RESIN_HOST_CONFIG_dtoverlay** | `hifiberry-dac`  |
-
-### pHAT DAC Required environment variable
-
-Set this in the Environmental Configuration panel.
-
-| Name         | Value |
-|------------- | ----- |
-| **PHAT_DAC** | `1`   |
-
-### Environment variable to enable Remote Control
-
-Set this in the Environmental Configuration panel.
+Set this in the Device Service Variables panel.
 
 | Name                                            | Value |
 |------------------------------------------------ | ----- |
@@ -50,6 +34,23 @@ Set this in the Environmental Configuration panel.
 
 Settings this environment variable will put the file `advancedsettings.xml` in the folder `/root/.kodi/userdata`.
 This will enable the web interface as specified in https://kodi.wiki/view/Web_interface so you can control Kodi via http://<IP_address>:8080 or using a Kodi Remote app.
+
+## pHAT DAC configuration
+### Required Device Configuration
+
+Set this in the Fleet or Device Configuration panel.
+
+| Name                            | Value            |
+|-------------------------------- | ---------------- |
+| **RESIN_HOST_CONFIG_dtoverlay** | `hifiberry-dac`  |
+
+### Required Device Service Variable
+
+Set this in the Device Service Variables panel.
+
+| Name         | Value |
+|------------- | ----- |
+| **PHAT_DAC** | `1`   |
 
 ## License
 
