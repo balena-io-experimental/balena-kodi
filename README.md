@@ -40,6 +40,18 @@ Set this in the Environmental Configuration panel.
 |------------- | ----- |
 | **PHAT_DAC** | `1`   |
 
+### Environment variable to enable Remote Control
+
+Set this in the Environmental Configuration panel.
+
+| Name                                            | Value |
+|------------------------------------------------ | ----- |
+| **ENABLE_REMOTE_CONTROL_VIA_ADVANCEDSETTINGS ** | `1`   |
+
+Settings this environment variable will put the file `advancedsettings.xml` in the folder `/root/.kodi/userdata`.
+This will enable the web interface as specified in https://kodi.wiki/view/Web_interface
+So you can control KODI via http://<IP_address>:8080 or using a Kodi Remote app.
+
 ## License
 
 Copyright 2016 Rulemotion Ltd.
