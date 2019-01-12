@@ -16,7 +16,7 @@ if [[ "$REMOTE_CONTROL" = "1" ]]; then
 else
   # Remove advancedsettings.xml 
   mkdir /data/kodi/userdata >/dev/null 2>&1 || true && rm -rf /data/kodi/userdata/advancedsettings.xml
-if
+fi
 
 while true; do
     DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket /usr/bin/kodi-standalone
