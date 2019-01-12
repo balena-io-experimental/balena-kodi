@@ -9,5 +9,5 @@ fi
 mkdir /data/kodi >/dev/null 2>&1 || true && rm -rf /root/.kodi && ln -s /data/kodi /root/.kodi
 
 while true; do
-    DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host_run/dbus/system_bus_socket /usr/bin/kodi-standalone
+    DBUS_SYSTEM_BUS_ADDRESS=unix:path=/host/run/dbus/system_bus_socket /usr/bin/kodi-standalone
 done
