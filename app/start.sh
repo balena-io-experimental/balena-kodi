@@ -8,16 +8,14 @@ fi
 # Handle Kodi userdata folder
 mkdir /data/kodi >/dev/null 2>&1 || true && rm -rf /root/.kodi && ln -s /data/kodi /root/.kodi
 
-# env variable $REMOTE_CONTROL can be used to enable remote control 
+# env variable $ENABLE_REMOTE_CONTROL_VIA_ADVANCEDSETTINGS can be used to enable remote control via the advancedsettings.xml
 # see https://kodi.wiki/view/Web_interface
-if [[ "$REMOTE_CONTROL" = "1" ]]; then
+if [[ "$ENABLE_REMOTE_CONTROL_VIA_ADVANCEDSETTINGS" = "1" ]]; then
   # Copy advancedsettings.xml to proper folder.
   mkdir /data/kodi/userdata >/dev/null 2>&1 || true && cp /usr/src/app/advancedsettings.xml /data/kodi/userdata
 else
   # Remove advancedsettings.xml 
   mkdir /data/kodi/userdata >/dev/null 2>&1 || true && rm -rf /data/kodi/userdata/advancedsettings.xml
-	# also disable remote control in guisettings.xml if it is set.
-	sed -i -e 's/<esallinterfaces default="true">true/<esallinterfaces default="true">false/' -e 's/<webserver default="true">true/<webserver default="true">false/' /root/.kodi/userdata/guisettings.xml
 fi
 
 while true; do
