@@ -1,4 +1,3 @@
-#FROM resin/%%RESIN_MACHINE_NAME%%-node:slim
 FROM balenalib/%%BALENA_MACHINE_NAME%%-node:latest-jessie-run
 
 # The following 3 RUN commands are only needed if you want to install Kodi version 17.4.
