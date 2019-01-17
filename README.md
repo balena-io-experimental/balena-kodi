@@ -52,6 +52,10 @@ Set this in the Device Service Variables panel.
 |------------- | ----- |
 | **PHAT_DAC** | `1`   |
 
+# Post Installation Configuration
+
+In order to assure that the raspberry pi is able to properly play videos you must enable **Allow hardware acceleration - OMXPlayer** from the **Settings > Player Settings** menu.
+
 ## License
 
 Copyright 2016 Rulemotion Ltd.
