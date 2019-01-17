@@ -7,7 +7,7 @@ RUN apt-get clean && apt-get update && apt-get install -y \
   wget \
   curl
 
-# 2.Add Kodi-16 apt source
+# 2.Add Kodi-17 apt source
 RUN echo "deb http://pipplware.pplware.pt/pipplware/dists/jessie/main/binary /" \
 >> /etc/apt/sources.list.d/pipplware_jessie.list && \
 wget -O - http://pipplware.pplware.pt/pipplware/key.asc | sudo apt-key add -
