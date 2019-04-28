@@ -1,4 +1,4 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-node:latest-jessie-run
+FROM balenalib/%%BALENA_MACHINE_NAME%%-node:latest-stretch-run
 
 # The following 3 RUN commands are only needed if you want to install Kodi version 17.4.
 # Without the following 3 RUN commands, Kodi version 17.3 will be installed !
