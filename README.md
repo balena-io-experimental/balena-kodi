@@ -1,6 +1,10 @@
 # balena-kodi
-A boilerplate for getting up and running with [Kodi](https://kodi.tv/)
+A boilerplate for getting up and running with [Kodi](https://kodi.tv/) v18.1
 open source home theatre on your balena-enabled [Raspberry Pi](https://www.raspberrypi.org/).
+
+Also the nessary things are installed to watch amazon prime movies and series.  For this you need an amazon prime account !
+
+Moreover it should be relatively easy to extend this repository so that it also supports netflix (for this have a look at https://www.makeuseof.com/tag/netflix-amazon-video-plex-raspberry-pi/ )
 
 ## Evnvironment variables
 
@@ -55,6 +59,12 @@ Set this in the Device Service Variables panel.
 # Post Installation Configuration
 
 In order to assure that the raspberry pi is able to properly play videos you must enable **Allow hardware acceleration - OMXPlayer** from the **Settings > Player Settings** menu.
+
+# Post Installation Configuration for Amazon prime videos
+
+Follow the instructions specified in section _"Install and Configure Amazon Video on Raspberry Pi"_ of  https://www.makeuseof.com/tag/netflix-amazon-video-plex-raspberry-pi/
+
+Note that you don't need to download `repository.sandmann79.plugins-1.0.2.zip`.  This file is already downloaded.  It can be found in the root folder (= `\`)
 
 ## License
 

@@ -5,22 +5,8 @@ RUN apt-get clean && apt-get update && apt-get install -y \
   wget \
   curl
 
-
-# see https://www.makeuseof.com/tag/netflix-amazon-video-plex-raspberry-pi/
-
 # 2. wget sandmann79 plugins repository (needed to install amazon VOD plug-in)
 RUN  wget https://github.com/Sandmann79/xbmc/releases/download/v1.0.2/repository.sandmann79.plugins-1.0.2.zip
-
-# 2.Add Kodi-18 apt source  (see https://www.raspberrypi.org/forums/viewtopic.php?t=222954)
-#RUN echo "deb http://pipplware.pplware.pt/pipplware/dists/unstable/main/binary /" > /etc/apt/sources.list.d/pipplware_unstable.list
-
-# 2.Add Kodi-17 apt source
-#RUN echo "deb http://pipplware.pplware.pt/pipplware/dists/jessie/main/binary /" \
-#>> /etc/apt/sources.list.d/pipplware_jessie.list && \
-#wget -O - http://pipplware.pplware.pt/pipplware/key.asc | sudo apt-key add -
-
-# 3. WTF is going on with httpredir from debian? removing it the dirty way
-#RUN sed -i "s@httpredir.debian.org@`curl -s -D - http://httpredir.debian.org/demo/debian/ | awk '/^Link:/ { print $2 }' | sed -e 's@<http://\(.*\)/debian/>;@\1@g'`@" /etc/apt/sources.list
 
 # Install apt deps
 RUN apt-get clean && apt-get update && apt-get upgrade -y && apt-get install -y \
