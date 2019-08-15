@@ -1,6 +1,6 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-node:latest-stretch-run
+#FROM balenalib/%%BALENA_MACHINE_NAME%%-node:latest-stretch-run
 # see https://hub.docker.com/r/balenalib/raspberry-pi-node/tags
-#FROM balenalib/%%BALENA_MACHINE_NAME%%-node:stretch-run-2019-06-12
+FROM balenalib/%%BALENA_MACHINE_NAME%%-node:stretch-run-20190612
 
 # 1.Install wget and curl.  Only wget is needed for downloading repository.sandmann79.plugins-1.0.2.zip
 RUN apt-get clean && apt-get update && apt-get install -y \
