@@ -11,8 +11,8 @@ RUN apt-get clean && apt-get update && apt-get install -y \
 RUN  wget https://github.com/Sandmann79/xbmc/releases/download/v1.0.2/repository.sandmann79.plugins-1.0.2.zip
 
 # Install apt deps
-RUN apt-get clean && apt-get update && apt-get upgrade -y && apt-get install -y \
-#RUN apt-get clean && apt-get update && apt-get install -y \
+#RUN apt-get clean && apt-get update && apt-get upgrade -y && apt-get install -y \
+RUN apt-get clean && apt-get update && apt-get install -y \
   apt-utils \
   build-essential \
   libasound2-dev \
