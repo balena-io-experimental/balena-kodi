@@ -1,4 +1,5 @@
 # see https://hub.docker.com/r/balenalib/raspberry-pi-node/tags
+#FROM balenalib/%%BALENA_MACHINE_NAME%%-node:latest-stretch-run
 FROM balenalib/%%BALENA_MACHINE_NAME%%-node:12.1-stretch-run-20190511
 # note that at 2019-08-15 it didn't work with image balenalib/%%BALENA_MACHINE_NAME%%-node:latest-stretch-run
 
@@ -12,7 +13,8 @@ RUN  wget https://github.com/Sandmann79/xbmc/releases/download/v1.0.2/repository
 
 # Install apt deps
 # note that I have removed "apt-get upgrade -y" from next command as this didn't work when tested at 2019-08-15
-RUN apt-get clean && apt-get update && apt-get install -y \
+RUN apt-get clean && apt-get update && apt-get install \
+  libraspberrypi-bin=1.20180328-1~nokernel1 libraspberrypi0=1.20180328-1~nokernel1 --allow-downgrades -y \
   apt-utils \
   build-essential \
   libasound2-dev \
@@ -23,7 +25,6 @@ RUN apt-get clean && apt-get update && apt-get install -y \
   git \
   alsa-base \
   alsa-utils \
-  fbset \
   kodi \
   kodi-inputstream-adaptive \
   libnss3 \
