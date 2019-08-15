@@ -1,5 +1,5 @@
 # balena-kodi
-A boilerplate for getting up and running with [Kodi](https://kodi.tv/) v18.1
+A boilerplate for getting up and running with [Kodi](https://kodi.tv/) v18.2 Git:20190428-a94ccc8ba5
 open source home theatre on your balena-enabled [Raspberry Pi](https://www.raspberrypi.org/).
 
 Also the nessary things are installed to watch amazon prime movies and series.  For this you need an amazon prime account !
