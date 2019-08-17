@@ -90,8 +90,8 @@ I noticed that searching for Amazon movies and series is very slow in kodi.  It 
 
 ### Limitations for Amazon prime
 
-1. omxplayer (HW accellaration) must be switched off otherwise you get black/green/gibberish video
-1. on a pi the max video resolution is apparently 720p - you can change the video resolution when playing a video rate.
+1. `Àllow hardware accellaration - OMXplayer` must be disabled otherwise you get green screen when playing movies (see [playing an amazon prime video shows green screen #1](https://github.com/janvda/balena-kodi-etcetera/issues/1))
+1. on a pi the max video resolution is apparently 720p - you can change the video resolution when playing a movie.
 
 ## License
 
