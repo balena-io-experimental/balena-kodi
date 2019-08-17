@@ -3,9 +3,9 @@
 A boilerplate for getting up and running with [Kodi](https://kodi.tv/) (v18.2 Git:20190428-a94ccc8ba5)
 open source home theatre on your balena-enabled [Raspberry Pi](https://www.raspberrypi.org/).
 
-Also the nessary things are installed to watch amazon prime movies and series.  For this you need an amazon prime account !
+Also the nessary things are installed to watch **amazon prime** movies and series.  For this you need an amazon prime account !
 
-Moreover it should be relatively easy to extend this repository so that it also supports netflix (for this have a look at https://www.makeuseof.com/tag/netflix-amazon-video-plex-raspberry-pi/ )
+Moreover it should be relatively easy to extend this repository so that it also supports **netflix** (for this have a look at https://www.makeuseof.com/tag/netflix-amazon-video-plex-raspberry-pi/ )
 
 ## Evnvironment variables
 
