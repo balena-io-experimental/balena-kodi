@@ -91,11 +91,11 @@ For more information about the `Amazon VOD` add-on see the [faq](https://github.
 ### Limitations (on a raspberry pi)
 
 1. `Àllow hardware accellaration - OMXplayer` must be disabled otherwise you get green screen when playing movies (see [playing an amazon prime video shows green screen #1](https://github.com/janvda/balena-kodi-etcetera/issues/1))
-1. on a pi the max video resolution is apparently 720p - you can change the video resolution when playing a movie.
+1. on a pi the max video resolution is apparently 720p - you can change the video resolution when playing a movie.  See also [My video is choppy / My video stutters a lot](https://github.com/Sandmann79/xbmc/wiki/FAQ#my-video-is-choppy--my-video-stutters-a-lot).
 
 ### Tip
 
-I noticed that searching for Amazon movies and series is very slow in kodi.  It is much faster to search those Amazon movies and series from a PC/laptop at site [primevideo](https://www.primevideo.com/) and add them to your watch list.  In kodi you can then open your watch list and launch the movies and series from there.
+I noticed that searching for Amazon movies and series is very slow in kodi (I think this is also covered in [issue 304](https://github.com/Sandmann79/xbmc/issues/304)).  It is much faster to search those Amazon movies and series from a PC/laptop at site [primevideo](https://www.primevideo.com/) and add them to your watch list.  In kodi you can then open your watch list and launch the movies and series from there.
 
 ## License
 
