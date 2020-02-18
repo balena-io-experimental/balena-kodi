@@ -1,0 +1,7 @@
+<advancedsettings>
+    <services>
+        <esallinterfaces>true</esallinterfaces>
+        <webserver>true</webserver>
+        <zeroconf>true</zeroconf>
+    </services>
+</advancedsettings>
